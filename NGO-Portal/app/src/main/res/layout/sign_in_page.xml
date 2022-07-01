@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".sign_in_page">
+
+    <ImageView
+        android:id="@+id/app_logo_otp"
+        android:layout_width="259dp"
+        android:layout_height="227dp"
+        android:contentDescription="@string/app_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174"
+        app:srcCompat="@drawable/app_logo" />
+
+    <View
+        android:id="@+id/otp_view"
+        android:layout_width="269dp"
+        android:layout_height="288dp"
+        android:background="@drawable/custom_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textColor="@color/nevi_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/otp_view"
+        app:layout_constraintEnd_toEndOf="@+id/otp_view"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="@+id/otp_view"
+        app:layout_constraintTop_toTopOf="@+id/otp_view"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <EditText
+        android:id="@+id/phone_no_edittext"
+        android:layout_width="205dp"
+        android:layout_height="40dp"
+        android:autofillHints=".AUTOFILL_HINT_PHONE_NATIONAL"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/custom_phone_logo"
+        android:drawablePadding="23dp"
+        android:ems="10"
+        android:hint="@string/phone_no."
+        android:inputType="number|phone"
+        android:maxLength="10"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColorHighlight="@color/nevi_blue"
+        android:textColorLink="#070F3E"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/otp_view"
+        app:layout_constraintEnd_toEndOf="@+id/otp_view"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="@+id/otp_view"
+        app:layout_constraintTop_toTopOf="@+id/otp_view"
+        app:layout_constraintVertical_bias="0.262"
+        android:drawableLeft="@drawable/custom_phone_logo" />
+
+    <Button
+        android:id="@+id/get_otp_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/get_otp"
+        app:layout_constraintBottom_toBottomOf="@+id/otp_view"
+        app:layout_constraintEnd_toEndOf="@+id/otp_view"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/otp_view"
+        app:layout_constraintTop_toBottomOf="@+id/phone_no_edittext"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textColor="@color/nevi_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/otp_view"
+        app:layout_constraintEnd_toEndOf="@+id/otp_view"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/otp_view"
+        app:layout_constraintTop_toBottomOf="@+id/get_otp_button"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/india_code_no"
+        android:textColor="@color/nevi_blue"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_no_edittext"
+        app:layout_constraintEnd_toEndOf="@+id/phone_no_edittext"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="@+id/phone_no_edittext"
+        app:layout_constraintTop_toTopOf="@+id/phone_no_edittext"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/otp_view"
+        app:layout_constraintEnd_toEndOf="@+id/otp_view"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/otp_view"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.google.android.gms.common.SignInButton>
+
+    <ProgressBar
+        android:id="@+id/progressBar_sign_in"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

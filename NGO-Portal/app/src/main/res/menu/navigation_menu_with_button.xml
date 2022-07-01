@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="HOME"
+        android:icon="@drawable/home_ic"
+        app:cnb_iconColor="@color/nevi_blue"
+        app:cnb_backgroundColor="@color/white"
+        />
+
+    <item
+        android:id="@+id/blank"
+        android:title=""
+        android:enabled="false"
+        app:showAsAction="ifRoom"
+
+        />
+
+    <item
+        android:id="@+id/blank2"
+        android:title=""
+        android:enabled="false"
+        app:showAsAction="ifRoom"
+
+        />
+
+
+    <item
+        android:id="@+id/profile"
+        android:title="PROFILE"
+        android:icon="@drawable/account_ic"
+        app:cnb_iconColor="@color/nevi_blue"
+        app:cnb_backgroundColor="@color/white"
+        />
+
+</menu>

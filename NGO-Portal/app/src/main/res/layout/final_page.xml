@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".final_page">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="815dp"
+        android:layout_marginBottom="100dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="TODO"
+        android:src="@drawable/add_ic"
+        app:borderWidth="@dimen/_10mdp"
+        app:backgroundTint="@color/nevi_blue"
+        app:layout_anchor="@id/button_app_bar"
+        app:maxImageSize="40dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/button_app_bar"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/nevi_blue"
+        app:fabAlignmentMode="center"
+        app:fabCradleMargin="6dp"
+        app:fabCradleRoundedCornerRadius="80dp"
+
+        >
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/chip_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            app:cnb_iconSize="30dp"
+            app:cnb_menuResource="@menu/navigation_menu_with_button"
+            app:cnb_radius="28dp"
+            app:cnb_unselectedColor="@color/white"
+
+            />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

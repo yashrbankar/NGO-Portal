@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "499604134148",
+    "project_id": "helping-hands-otp",
+    "storage_bucket": "helping-hands-otp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499604134148:android:78cbea05c2f4422a859851",
+        "android_client_info": {
+          "package_name": "com.example.helpinghands"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499604134148-441t973ejb5kq94usbhpgp1c8tgb3jgg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNBPjBqkdT8HIfga9DW0h09dbUrtbkZHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499604134148-441t973ejb5kq94usbhpgp1c8tgb3jgg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

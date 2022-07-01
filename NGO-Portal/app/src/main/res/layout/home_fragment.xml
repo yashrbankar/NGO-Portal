@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".fragment.home_fragment">
+
+    <androidx.appcompat.widget.ActionMenuView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40mdp"
+        android:background="@color/nevi_blue"
+        android:gravity="start"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donations"
+            android:textColor="@color/white"
+            android:fontFamily="@font/baloo"
+            android:textStyle="bold"
+            android:textSize="@dimen/_25mdp"
+            android:drawableStart="@drawable/ic_app"
+            android:drawablePadding="@dimen/_10mdp"
+            android:paddingEnd="@dimen/_80mdp"
+            android:paddingStart="@dimen/_10mdp"
+            />
+
+
+    </androidx.appcompat.widget.ActionMenuView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_posts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_7mdp"
+        android:layout_marginRight="@dimen/_7mdp"
+        android:layout_marginBottom="@dimen/_15mdp">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</LinearLayout>

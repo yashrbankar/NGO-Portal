@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Helping Hands</string>
+    <string name="or">OR</string>
+    <string name="password">Password</string>
+    <string name="phone_no.">Phone Number</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="get_otp">GET OTP</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="app_background">app_background</string>
+    <string name="app_logo">app_logo</string>
+    <string name="google_logo">google_logo</string>
+    <string name="facebook_logo">facebook_logo</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="resend_otp">Didnt receive OTP ?</string>
+    <string name="edit">Edit No.?</string>
+    <string name="india_code_no">+91</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="post_image">post_image</string>
+    <string name="call_ic">call_ic</string>
+    <string name="comment">Comments</string>
+    <string name="update_detail">Update detail</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="profile_image">profile_image</string>
+    <string name="my_donation">MY DONATION</string>
+    <string name="personal_info">PERSONAL INFO.</string>
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="skip">Skip</string>
+    <string name="add_image">Add Image</string>
+    <string name="description">Description OR Address</string>
+    <string name="upload">Upload</string>
+    <string name="name">Name</string>
+    <string name="time">Time</string>
+    <string name="likes">likes</string>
+    <string name="donations">DONATIONS</string>
+</resources>

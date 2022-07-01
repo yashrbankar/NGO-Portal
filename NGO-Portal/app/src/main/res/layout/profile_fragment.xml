@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.profile_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200mdp"
+            android:background="@color/nevi_blue"
+            android:paddingStart="@dimen/_20mdp"
+            android:paddingEnd="1dp">
+
+            <Button
+                android:id="@+id/sign_out_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/sign_out" />
+
+
+            <ImageButton
+                android:id="@+id/edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_out_button"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10mdp"
+                android:layout_marginTop="@dimen/_30mdp"
+                android:background="@color/nevi_blue"
+                android:src="@drawable/ic_edit"
+                android:contentDescription="@string/edit_profile"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/p"
+                android:layout_width="@dimen/_110mdp"
+                android:layout_height="@dimen/_110mdp"
+                android:layout_centerVertical="true"
+                android:elevation="@dimen/_10mdp"
+                app:cardCornerRadius="@dimen/_60mdp"
+                app:cardPreventCornerOverlap="false">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_add_user"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/profile_image"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/p"
+                android:layout_marginStart="@dimen/_10mdp"
+                android:layout_marginTop="88dp"
+                android:fontFamily="@font/baloo"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15font_mdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/full_name"
+                android:layout_marginStart="@dimen/_10mdp"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:layout_marginBottom="-15dp"
+                android:layout_toEndOf="@+id/p"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10font_mdp" />
+
+            <TextView
+                android:id="@+id/phone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/p"
+                android:layout_alignBottom="@+id/emailid"
+                android:layout_marginBottom="-20dp"
+                android:layout_marginStart="@dimen/_10mdp"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10font_mdp" />
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_20mdp"
+            android:paddingRight="@dimen/_20mdp"
+            android:layout_marginTop="-55dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80mdp"
+                app:cardBackgroundColor="@color/nevi_blue"
+                android:elevation="@dimen/_10mdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/app_logo"
+                        android:layout_width="@dimen/_50mdp"
+                        android:layout_height="@dimen/_50mdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10mdp"
+                        android:contentDescription="@string/app_logo"
+                        android:src="@drawable/ic_app" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/app_logo"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/_10font_mdp">
+
+                        <TextView
+                            android:id="@+id/mydonation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/baloo"
+                            android:paddingHorizontal="@dimen/_10font_mdp"
+                            android:text="@string/my_donation"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_20font_mdp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_All_images_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10mdp"
+            android:layout_margin="@dimen/_1mdp"/>
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
